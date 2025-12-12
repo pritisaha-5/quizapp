@@ -1,19 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quiz App</title>
-
-  <!-- Vaadin will inject JS/CSS automatically -->
-  <link rel="manifest" href="manifest.webmanifest">
-  <meta name="theme-color" content="#227aef">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <!-- This is where Vaadin renders the UI -->
-  <div id="outlet"></div>
+  <div class="container">
 
-  <!-- Vaadin-generated scripts will be injected here -->
+    <!-- Home / Categories -->
+    <div id="home">
+      <h1>Welcome to the Quiz!</h1>
+      <p>Select a Category:</p>
+      <div id="categories">
+        <button class="categoryBtn" data-category="math">Math</button>
+        <button class="categoryBtn" data-category="general">General Knowledge</button>
+      </div>
+    </div>
+
+    <!-- Quiz -->
+    <div id="quiz" class="hidden">
+      <div id="timer">15</div>
+      <div id="questionCard" class="fade">
+        <h2 id="question"></h2>
+        <div id="options"></div>
+      </div>
+    </div>
+
+    <!-- Score Page -->
+    <div id="scorePage" class="hidden">
+      <h1>Your Score</h1>
+      <p id="score"></p>
+      <canvas id="confettiCanvas"></canvas>
+      <button id="retryBtn">Retry</button>
+    </div>
+    
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
