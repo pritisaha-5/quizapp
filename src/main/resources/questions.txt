@@ -1,0 +1,19 @@
+What is the capital of India?
+Delhi | Mumbai | Kolkata | Chennai
+0
+
+Who developed Java?
+James Gosling | Bjarne Stroustrup | Guido van Rossum | Dennis Ritchie
+0
+
+What is 5 + 3?
+5 | 7 | 8 | 10
+2
+
+Which planet is known as the Red Planet?
+Earth | Venus | Mars | Jupiter
+2
+
+Who is known as the Father of Computers?
+Charles Babbage | Alan Turing | Isaac Newton | Steve Jobs
+0
